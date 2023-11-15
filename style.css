@@ -39,18 +39,30 @@ p {
 
 :root{
     --bg: white;
+    --text_portfolio: black;
     --text: #292929;
     --bg_btn:#292929;
     --text_btn:white;
+    --bg_green:#F6FFF6;
+    --bd_green:#000;
+    --text_green:#64C661;
+    --grid_bg:#FFF;
+    --grid_bd:#000;
 }
 
 
 @media (prefers-color-scheme: dark) {
  :root{
+    --text_portfolio:white;
     --bg: black;
     --text: white;
     --bg_btn:  #925FF0;
     --text_btn:white;
+    --bd_green:#646464;
+    --bg_green:#0B0B0B;
+    --grid_bg:#0B0B0B;
+    --text_green:#C8FEC7;
+    --grid_bd:#737373;
  }
  .navbar_img, .list_link-icon{
     filter: invert(0);
@@ -59,6 +71,10 @@ p {
  .star{
     filter: invert(1);
  }
+
+ .dawn{
+    filter: grayscale(72%);
+}
 
 }
 
@@ -157,4 +173,121 @@ margin-top: 40px;
 
 .designer{
 margin-top: 40px;
+}
+
+.achievements_container{
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    display: flex;
+padding: 82px 110px;
+justify-content: space-between;
+border-radius: 29px;
+border: 1px solid var(--bd_green);
+background: var(--bg_green);
+margin-top: 145px;
+align-items: center;
+margin-bottom: 200px;
+color: var(--text_green);
+}
+
+.achievements_number{
+    text-align: center;
+    font-family: Anton;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 115.2px */
+    text-transform: uppercase;
+}
+
+.achievements_text{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.8px;
+}
+
+.portfolio{
+margin-top: 200px;
+margin-bottom: 200px;
+}
+
+.portfolio_container{
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.grid_box{
+    border-radius: 10px;
+    border: 1px solid var(--grid_bd);
+    background: var(--grid_bg);
+    padding: 30px;
+}
+
+.grid{
+    display: grid;
+grid-template-columns: repeat(4, 360px);
+gap:30px;
+row-gap: 30px;
+}
+
+.btn_grid_box{
+display: flex;
+gap: 5px;
+}
+
+.portal{
+    color: var(--text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%; /* 28px */
+    letter-spacing: -1.4px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.portfolio_text{
+    color: var(--text_portfolio);
+font-family: Anton;
+font-size: 64px;
+font-weight: 400;
+line-height: 100%; /* 64px */
+text-transform: uppercase;
+margin-bottom: 35px;
+}
+
+.btn_grid{
+    border-radius: 12px;
+    border: 1px solid var(--main-colors-purple-3, #BE9FF6);
+    background: var(--main-colors-purple-1, #E9DFFC);
+    padding: 4px 8px 6px 8px;
+    color: var(--main-colors-purple-6, #784DC7);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.7px;
+}
+
+.btn{
+    background: #292929;
+    padding: 12px 24px;
+    text-align: center;
+    color: #FFF;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 100%; /* 16px */
+letter-spacing: -0.8px;
+text-transform: capitalize;
+margin-top: 23px;
 }
