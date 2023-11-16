@@ -48,6 +48,7 @@ p {
     --text_green:#64C661;
     --grid_bg:#FFF;
     --grid_bd:#000;
+    --skills_bg: white;
 }
 
 
@@ -63,6 +64,7 @@ p {
     --grid_bg:#0B0B0B;
     --text_green:#C8FEC7;
     --grid_bd:#737373;
+    --skills_bg: #010101;
  }
  .navbar_img, .list_link-icon{
     filter: invert(0);
@@ -74,7 +76,12 @@ p {
 
  .dawn{
     filter: grayscale(72%);
-}
+ }
+
+ .graph{
+    content: url("./img/Graph_dark.png");
+    width: 100%;
+ }
 
 }
 
@@ -290,4 +297,60 @@ line-height: 100%; /* 16px */
 letter-spacing: -0.8px;
 text-transform: capitalize;
 margin-top: 23px;
+}
+
+.grid_skils_element{
+    border-radius: 10px;
+    border: 1px solid #737373;
+    background: var(--skills_bg);
+    display: flex;
+padding: 40px 50px 60px 40px;
+align-items: center;
+gap: 20px;
+}
+
+.skills_container{
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    margin-bottom: 200px;
+}
+
+.skills_text{
+    color: var(--text_portfolio);
+    font-family: Anton;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 64px */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.skills_title{
+    color: var(--text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 780;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.8px;
+    margin-bottom: 20px;
+}
+
+.skills_subtitle{
+    color: var(--text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+    letter-spacing: -1px;
+}
+
+.grid_skills{
+display: grid;
+grid-template-columns: repeat(2,755px);
+gap: 20px;
 }
