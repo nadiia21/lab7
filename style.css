@@ -49,6 +49,9 @@ p {
     --grid_bg:#FFF;
     --grid_bd:#000;
     --skills_bg: white;
+    --about_text:#464646;
+    --Red_Orange: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+    --Blue_Purple:linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
 }
 
 
@@ -65,12 +68,15 @@ p {
     --text_green:#C8FEC7;
     --grid_bd:#737373;
     --skills_bg: #010101;
+    --about_text:white;
+    --Red_Orange: linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%);
+    --Blue_Purple:linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%);
  }
  .navbar_img, .list_link-icon{
     filter: invert(0);
  }
 
- .star{
+ .star, .zig_zag{
     filter: invert(1);
  }
 
@@ -83,11 +89,19 @@ p {
     width: 100%;
  }
 
+ .gradient{
+    background: url("./img/background_dark.png") lightgray 50% / cover no-repeat;
+ }
+
 }
 
 @media (prefers-color-scheme: light){
     .navbar_img, .list_link-icon{
         filter: invert(1);
+    }
+
+    .gradient{
+        background: url("./img/background_light.png") lightgray 50% / cover no-repeat;
     }
 }
 
@@ -353,4 +367,163 @@ gap: 20px;
 display: grid;
 grid-template-columns: repeat(2,755px);
 gap: 20px;
+}
+
+.gradient{
+    margin-bottom: 200px;
+}
+
+.gradient_container{
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 145px 225px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.title_gradient{
+    color:  #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%; /* 50.4px */
+    letter-spacing: -2.4px;
+}
+
+.text_gradient{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 105%; /* 50.4px */
+    letter-spacing: -2.4px;
+}
+
+.about_me_container{
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0px 5px;
+}
+
+.title_about{
+    color: var(--text);
+    font-family: Anton;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 64px */
+    text-transform: uppercase;
+}
+
+.box_about{
+display: flex;
+gap: 38px;
+align-items: center;
+}
+
+.text_about{
+    color: var(--about_text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.8px;
+    margin-top: 75px;
+}
+
+.i_am{
+padding-right: 165px;
+width: 794px;
+}
+
+.color_text{
+    background: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.flex_about{
+display: flex;
+}
+
+.flex_about2{
+display: flex;
+align-items: center;
+}
+
+.learning_text{
+    color: var(--about_text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.8px;
+    margin-left: 85px;
+    text-align: right;
+}
+
+.color_text2{
+    background: var(--Red_Orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.full_name{
+    color: var(--about_text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: 100%; /* 36px */
+    letter-spacing: -1.8px;
+    margin-right: 140px;
+}
+
+.color_text3{
+    background: var(--Blue_Purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color_text4{
+    background: linear-gradient(90deg, #FFE76A 20%, #65C8FF 29%, #65C8FF 40%, #65C8FF 73%, #F00 20.1%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.spiral{
+position: absolute;
+right: 70px;
+}
+
+.photo{
+position: relative;
+max-height: 530px;
+}
+
+.dawn2{
+position: absolute;
+left: 150px;
+top:17px;
+}
+
+.warm{
+position: absolute;
+right: 30px;
+top: 20px;
 }
